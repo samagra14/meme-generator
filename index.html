@@ -4,18 +4,22 @@
     <title>Canvas Test</title>
 </head>
 <body>
-<canvas id="c" width="200" height="200"></canvas>
+<canvas id="c" width="500" height="500"></canvas>
 <script type="text/javascript">
     var canvas = document.querySelector("#c");
     var context = canvas.getContext("2d");
 
-    var image = new Image();
-    image.src = "abc.jpg";
 
-    image.onload = function () {
-        console.log("Loaded Image");
-        context.drawImage(image, 0, 0, canvas.width, canvas.height);
-    };
+    context.strokeText("Hello Udacity",50,10,200);
+    context.font = "36pt Impact";
+    context.textAlign = "center";
+
+    context.fillStyle = "white";
+    context.fillText("Canvas Memes !",c.width/2,200);
+
+    context.strokeStyle = "black";
+    context.lineWidth = "3";
+    context.strokeText("Canvas Memes !",c.width/2,200);
 
 
 </script>
