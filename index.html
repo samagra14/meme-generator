@@ -1,27 +1,37 @@
-<!DOCTYPE HTML>
 <html>
 <head>
-    <title>Canvas Test</title>
+    <title>
+        Simple Mememaker
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <style>
+        #image-container {
+            display: flex;
+        }
+    </style>
 </head>
 <body>
-<canvas id="c" width="500" height="500"></canvas>
+<div>
+    <input type="file" id="file"/>
+</div>
+<div id="image-container">
+    <canvas width="1000" height="1000"></canvas>
+    <div>
+        <span>Top Line :</span><br/>
+        <input id="topLineText" type="text"><br/>
+        <span> Bottom Line </span><br>
+        <input id="bottomLineText" type="text"><br/>
+        <button id="saveBtn">Save</button>
+    </div>
+</div>
 <script type="text/javascript">
-    var canvas = document.querySelector("#c");
-    var context = canvas.getContext("2d");
+    function textChangeListener (evt){
+        var id = evt.target.id;
+        var text = evt.target.value;
 
-
-    context.strokeText("Hello Udacity",50,10,200);
-    context.font = "36pt Impact";
-    context.textAlign = "center";
-
-    context.fillStyle = "white";
-    context.fillText("Canvas Memes !",c.width/2,200);
-
-    context.strokeStyle = "black";
-    context.lineWidth = "3";
-    context.strokeText("Canvas Memes !",c.width/2,200);
-
-
+    }
 </script>
 </body>
 </html>
