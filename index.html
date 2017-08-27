@@ -18,7 +18,7 @@
     <input type="file" id="file"/>
 </div>
 <div id="image-container">
-    <canvas width="1000" height="1000"></canvas>
+    <canvas width="500" height="500"></canvas>
     <div>
         <span>Top Line :</span><br/>
         <input id="topLineText" type="text"><br/>
@@ -49,7 +49,7 @@
             context.drawImage(image,0,0,canvas.width,canvas.height);
         }
 
-        context.font = "36pt Impact";
+        context.font = "36pt Sans-serif";
         context.textAlign = "center";
         context.fillStyle = "white";
         context.strokeStyle = "black";
@@ -77,8 +77,8 @@
     }
     
     function handleFileSelect(evt) {
-        var canvasWidth = 1000;
-        var canvasHeight = 1000;
+        var canvasWidth = 500;
+        var canvasHeight = 500;
         var file = evt.target.files[0];
 
         var reader = new FileReader();
