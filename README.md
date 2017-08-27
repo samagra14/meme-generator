@@ -5,4 +5,4 @@ Write cool text and troll your friends.
 
 ## Screenshots
 ![image](image)
-<br><br> You can enjoy this awesome meme maker [here](samagra14.github.io/meme-generator)
+<br><br> You can enjoy this awesome meme maker [here](https://samagra14.github.io/meme-generator/)
