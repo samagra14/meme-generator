@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Canvas Test</title>
+</head>
+<body>
+<canvas id="c" width="200" height="200"></canvas>
+<script type="text/javascript">
+    var canvas = document.querySelector("#c");
+    var context = canvas.getContext("2d");
+
+    var image = new Image();
+    image.src = "abc.jpg";
+
+    image.onload = function () {
+        console.log("Loaded Image");
+        context.drawImage(image, 0, 0, canvas.width, canvas.height);
+    };
+
+
+</script>
+</body>
+</html>
